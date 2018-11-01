@@ -1,0 +1,2 @@
+theSecret = "student"
+theUser = "postgres"

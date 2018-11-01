@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<main class = "container signup-section">
+  <div class = "section-content">
+    {% set i = 0  %}
+    {% set j = '0' %}
+    <h2> Decide the scores</h2>
+
+    <form method = "POST" action="/picscore">
+      {{ form.hidden_tag() }}
+
+      {% for i in range(10) %}
+        <div class = "form-group">
+          {% if (i < 10) %}
+            <p>
+              <div class="section-device"><img src="../static/img/wfacef/img00{{i}}.png" id = "imgclass"></div>
+              <div class = "section-device">
+                <p class = "nice">This is picture img00{{i}}.png</p>
+                {{ scores[i] }}
+              </div>
+              <br>
+            </p>
+          {% elif (i < 100) %}
+            <p>
+              <div class="section-device"><img src="../static/img/wfacef/img0{{i|int}}.png"></div>
+              <div class = "section-device">
+                <p class = "nice">This is picture img00{{i}}.png</p>
+                {{ scores[i] }}
+              </div>
+            </p>
+          {% endif %}
+        </div>
+      {% endfor %}
+      <div class = "section-device">
+      {{ form.submission(class="btn-tertiary") }}
+      </div>
+    </form>
+  </div>
+</main>
+{% endblock %}

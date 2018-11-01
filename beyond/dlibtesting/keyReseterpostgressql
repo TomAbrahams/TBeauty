@@ -1,0 +1,1 @@
+﻿SELECT pg_catalog.setval(pg_get_serial_sequence('scores', 'id'), MAX(id)) FROM scores;
