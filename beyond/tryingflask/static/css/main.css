@@ -87,6 +87,13 @@ a {
   position: relative;
   top: 65px;
 }
+.flex-container {
+  display: flex;
+ height: 600px;
+ flex-direction: column;
+ 
+ align-content: space-between;
+}
 
 .section-device img {
   width: 600px;

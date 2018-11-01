@@ -1,2 +1,2 @@
-theSecret = "student"
-theUser = "postgres"
+theSecret = "allmight714!"
+theUser = "utkeitaro"

@@ -22,7 +22,11 @@ def index():
 @app.route("/about")
 def about():
     return render_template("about.html")
-
+#Let's see if this WORKS
+@app.route("/testresults")
+def testresults():
+    Z =[52,53,54,55,56,57]
+    return render_template('testresults.html', A=Z)
 
 #Pic Score 3... Lets see
 @app.route("/picscore3",methods=['GET','POST'])
@@ -65,7 +69,8 @@ def picscore3():
         #This will train the item.
         finalScore = frontendSide(newScoreEmail)
         print(finalScore)
-        return str(finalScore)
+        #return str(finalScore)
+        return render_template('testresults.html',A=finalScore)
         #return jsonify(myOptions)
     elif request.method =="GET":
         return render_template('picscore3.html', i=0,j='0')
