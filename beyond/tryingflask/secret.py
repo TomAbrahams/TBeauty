@@ -1,2 +1,2 @@
-theSecret = "allmight714!"
-theUser = "utkeitaro"
+theSecret = "student"
+theUser = "student"

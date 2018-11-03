@@ -89,7 +89,7 @@ a {
 }
 .flex-container {
   display: flex;
- height: 600px;
+ height: 300px;
  flex-direction: column;
  
  align-content: space-between;

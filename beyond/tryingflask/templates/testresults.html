@@ -5,25 +5,28 @@
   <div class = "section-content">
     {% set B = [1,2,3,4,5,6] %}
     {% set j = '0' %}
-    <h2> Decide the scores</h2>
+    <h2> The results from your MLP Classifier</h2>
 
       {% for i in range(6) %}
         <div class = "form-group">
 
           {% if (i < 10) %}
-          <p>{{A[i-2]}}</p>
-          <br>
-          </p>
+        
             <p>
               <div class="flex-container">
-                <img src="../static/img/wfacef/timg05{{i+2}}.png" id = "imgclass">
+		<div class="section-device">
+	                <img src="../static/img/wfacef/timg05{{i+2}}.png" id = "imgclass">
+		</div>
+
                 
-              </div>
-              </div>
+              
               <p>
 
               <br>
             </p>
+  		<div>
+		<p>Score: {{A[i-2]}}</p>	 	
+	  	</div>
 
           {% endif %}
       {% endfor %}
