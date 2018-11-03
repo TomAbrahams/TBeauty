@@ -5,12 +5,13 @@ import secret
 import os
 #Menu program.
 def makeCSV(myEmail):
-
     email = myEmail
+    #myEmail.replace('@','_')
+    print("current email is ", email)
     query = """
         select picpoints.*, scores.score, scores.email
         FROM picpoints
-        INNER JOIN scores ON (picpoints.imgName = scores.imagename and scores.email =
+        INNER JOIN scores ON (picpoints.imgname = scores.imagename and scores.email =
         """
 
     numOfRowsRequested = 50
@@ -42,10 +43,14 @@ def makeCSV(myEmail):
     print("Number of rows\n")
     print(len(rows))
     numberOfRows = len(rows)
+    if(numberOfRows == 0):
+        print("There are no rows!")
     if(numberOfRows):
         output = "COPY ({0}) TO STDOUT WITH CSV HEADER".format(query)
         email = email.replace("@","_")
         saveFileName = email + '-' + 'resultsfile.csv'
+        print("Hey")
+        print(saveFileName)
         direct = os.getcwd()
         os.chdir('..')
         print(direct)

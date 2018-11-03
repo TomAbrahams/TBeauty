@@ -62,7 +62,8 @@ def picscore3():
             db.session.add(newScore)
             db.session.commit()
             #this should do it.
-
+            newScoreEmail = str(request.form['email'])
+        print("The new email is ",newScoreEmail)
         options.append(newScoreEmail)
         #return myNumbers + " Check it"
         makeCSV(newScoreEmail)

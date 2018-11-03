@@ -79,6 +79,7 @@ if __name__ == '__main__':
     IP = 'localhost'
     PORT = 5019
     serverAddress = (IP, PORT)
+    #For debug purposes.
     A = [1,2,3,2,1]
     email = "mr@socko.com"
     #Server needs to set up the connections.

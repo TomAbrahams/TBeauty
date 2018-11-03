@@ -1,13 +1,14 @@
 import socket, json
 
 def sendingArray(myArray, myEmail):
+
     IP = 'localhost'
     PORT = 5019
     socko = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     serverAddress = (IP, PORT)
     socko.connect(serverAddress)
     data = json.dumps({"email" : myEmail, "results" : myArray})
-    print("Preparing to send data", data)
+    print("Preparing to send data from email =", myEmail)
     print(len(data))
     #Set up the size of the data.
     sizeOfData = len(data)
@@ -50,15 +51,17 @@ def frontendSide(email):
     PORT = 5101
     serverAddress = (IP, PORT)
     A = [0,1,2,3]
-    email = "pd@gmail.com"
-    sendingArray(A, email)
-    serverSocko = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    serverSocko.bind(serverAddress)
-    print("Setup binding.")
-    serverSocko.listen(1)
-    print("listening for results")
-    conn, addr = serverSocko.accept()
-    testResults = getingArray(conn, addr)
+    testResults = [-999]
+    #email = "pd@gmail.com"
+    if len(email) > 1:
+        sendingArray(A, email)
+        serverSocko = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        serverSocko.bind(serverAddress)
+        print("Setup binding.")
+        serverSocko.listen(1)
+        print("listening for results")
+        conn, addr = serverSocko.accept()
+        testResults = getingArray(conn, addr)
     if testResults[0] == -999:
         print("error.")
     else:

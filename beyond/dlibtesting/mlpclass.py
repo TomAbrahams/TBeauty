@@ -24,9 +24,9 @@ def mlpClassDlib(theEmail):
     del rawData['email']
 
     arrayRawData = rawData.values
-    X = arrayRawData[:,0:128]
-    X= X*100
-    Y = arrayRawData[:,128]
+    X = arrayRawData[:,0:136]
+    X= (X+1)*10
+    Y = arrayRawData[:,136]
 
     print("This is X\n")
     print(X)
@@ -52,11 +52,13 @@ def mlpClassDlib(theEmail):
     del testData['imgname']
     del testData['picid']
     #print(testData)
-    testData = testData*10
+    testData = (testData+1)*10
     #print(testimg)
     print("Test timg052 = ")
     numValue = NeuralModel.predict(testData)
+    numValue2 = NeuralModel.predict(testData)
     print(numValue)
+    print(numValue2)
     #GET Test Data
     numVal2 = NeuralModel.predict(X_test)
     print("NumVal2")
@@ -89,11 +91,11 @@ def testDataMLPClass(email):
         del testData['imgname']
         del testData['picid']
         #print(testData)
-        testData = testData*10
+        #testData = testData*10
         #print(testimg)
 
         print("Test timg052-057 = ")
-
+        testData = (testData+1)*10
         numValue = NeuralModel.predict(testData)
         print(numValue)
         #GET Test Data
