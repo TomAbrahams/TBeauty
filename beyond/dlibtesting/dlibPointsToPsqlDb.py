@@ -88,8 +88,8 @@ cv2.waitKey(0)
 #print(points)
 for i in range(len(points)):
     points[i].printPoint()
-print("Time to get swifty in here!\n")
-choice = input("Should we get swifty?(y/n)\n")
+print("Time to normalize!\n")
+choice = input("Should we normalize the data?(y/n)\n")
 
 if(choice == 'y'):
     for i in range(len(points)):
