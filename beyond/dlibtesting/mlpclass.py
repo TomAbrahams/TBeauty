@@ -18,6 +18,7 @@ def mlpClassDlib(theEmail):
     direct = os.getcwd()
     path = os.path.join(direct+"/fileRecords/", saveFileName)
     rawData = pd.read_csv(path)
+    print(rawData)
     #Cleaned up the dataset
     del rawData['picid']
     del rawData['imgname']
@@ -47,14 +48,15 @@ def mlpClassDlib(theEmail):
     NeuralModel.fit(X,Y)
     Y_pred = NeuralModel.predict(X_test)
     print(confusion_matrix(Y_test,Y_pred))
-    testData = pd.read_csv("testData.csv")
+    testData = pd.read_csv("testData2.csv")
+    print(testData)
     print("Test Data Acquired")
     del testData['imgname']
     del testData['picid']
     #print(testData)
     testData = (testData+1)*10
     #print(testimg)
-    print("Test timg052 = ")
+    print("Test T1.PNG to T6.PNG = ")
     numValue = NeuralModel.predict(testData)
     numValue2 = NeuralModel.predict(testData)
     print(numValue)
@@ -86,7 +88,7 @@ def testDataMLPClass(email):
     try:
         fileName= str(email) +'-mlpClass' + '.joblib'
         NeuralModel = joblib.load(fileName)
-        testData = pd.read_csv("testData.csv")
+        testData = pd.read_csv("testData2.csv")
         print("Test Data Acquired")
         del testData['imgname']
         del testData['picid']
@@ -94,7 +96,7 @@ def testDataMLPClass(email):
         #testData = testData*10
         #print(testimg)
 
-        print("Test timg052-057 = ")
+        print("Test T1-T6 = ")
         testData = (testData+1)*10
         numValue = NeuralModel.predict(testData)
         print(numValue)
@@ -106,7 +108,9 @@ def testDataMLPClass(email):
 
 if __name__ == '__main__':
     #email = input("What user email do you wish to analyze.\n")
-    email = "pd@gmail.com"
+    email = "tomx@gmail.com"
     email = str(email.replace("@", "_"))
     print("Running mlpClassifier from sklearn using dlib data")
+    mlpClassDlib(email)
+    print("Now let's see the test")
     value = testDataMLPClass(email)
