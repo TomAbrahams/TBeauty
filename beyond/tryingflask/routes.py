@@ -42,16 +42,9 @@ def picscore3():
         newScoreEmail = "utkeitarol@gmail.com"
         i = 0
         #myOptions['email'] = newScoreEmail
-        for z in range(50):
+        for z in range(1,51):
             currentScore = "score" + str(z)
-            picture = "img" + str(z)
-            if(z < 10):
-                #newScoreEmail = otherScores[i]
-                picture = "img00"+ str(z)+".png"
-            elif(z < 100):
-                picture = "img0" +str(z) + ".png"
-            else:
-                picture = "img" +str(z) + ".png"
+            picture = "a"+ str(z)+".PNG"
 
 
             options.append(request.form[currentScore])
@@ -63,6 +56,7 @@ def picscore3():
             db.session.commit()
             #this should do it.
             newScoreEmail = str(request.form['email'])
+            newScoreEmail = newScoreEmail.lower()
         print("The new email is ",newScoreEmail)
         options.append(newScoreEmail)
         #return myNumbers + " Check it"
