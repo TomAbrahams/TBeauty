@@ -4,9 +4,9 @@ Instead of tackling what is universal beauty, we propose to attempt to create pr
 This paper describes a fully-functional software system that creates an individual machine learning algorithm based off a profile to allow users to get an accurate assessment of what they would classify and score beauty. The system would take data and use facial landmarks in order to assess this. The system can be changed to allow automatic search of new images to proactively select the ones that have high scores for any individual user. The project uses an existing 68-point landmark detection algorithm proposed by Rainer Lienhard to identify the facial landmark points (a so called facial mask) from images that will be feed into various machine learning algorithms.
 
 
-Easiest Method (Recommended)
+# Easiest Method (Recommended)
 A pre made VM for virtual box with all items ready to go!
-https://drive.google.com/file/d/1le5IgP1rzXWLyhXeuQ4TLAmmhN-XNzNz/view?usp=sharing
+https://drive.google.com/file/d/1nR-2ziV7M5Gc6fhIDjlM8uRvutPK87ls/view?usp=sharing
 
 Inside the VM is an image that shows what needs to be done.
 1. Login to the VM with username being student, and password being student 
@@ -26,6 +26,7 @@ Inside the VM is an image that shows what needs to be done.
 5.Open the Mozilla Firefox and type in the following address 127.0.0.1:5000
 6. Click on Train Algorithm
 7. And enter an email, and score the pictures with 1 being least beautiful and 5 being most.
-Advanced Method
+
+# Advanced Method
 The user manual to install the pre-reqs, with a step by step guide.
 https://docs.google.com/document/d/15VIUz23H1cENw7gDKFNauCM-lxr3O0vhaYWUwwmVqUA/edit?usp=sharing
