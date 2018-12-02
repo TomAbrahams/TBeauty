@@ -44,16 +44,27 @@ Rhodes, G. (2006). THE EVOLUTIONARY PSYCHOLOGY OF FACIAL BEAUTY. Annual Review o
 Kagian, Dror, Leyvand, Meilijson, Cohen-Or, & Ruppin. (2008). A machine learning predictor of facial attractiveness revealing human-like psychophysical biases. Vision Research, 48(2), 235-243.
 
 Rainer Lienhart, haarcascade_frontalface_default.xml by Rainer Lienhart, 24x24 discrete,
- Imperial College London, predictor_68_face_landmarks.dat.bz2
+
+Imperial College London, predictor_68_face_landmarks.dat.bz2
+ 
 "Facial landmarks with dlib, OpenCV, and python." , edited by Adrian Rosebrock, pyimagesearch, 3 Apr. 2017, www.pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/. Accessed 8 Nov. 2018.
+
 Amaratunga, Thimira. "Extracting individual Facial Features from Dlib Face Landmarks." Codes of Interest: Extracting individual Facial Features from Dlib Face Landmarks, Codes of Interest, www.codesofinterest.com/2017/04/extracting-individual-facial-features-dlib.html. Accessed 10 Sept. 2018.
+
 Women Teamwork Team Business, Pixabay, pixabay.com/en/women-teamwork-team-business-1209678/. Accessed 2018.
+
 Women Girl Portrait Female Yong, Pixabay, https://pixabay.com/en/woman-girl-portrait-female-young-828610/. Accessed 2018.
+
 Górecki, Jerzy. Girl Woman Portrait. . pixabay. pixabay.com/en/girl-woman-portrait-face-young-2215071/. Accessed 25 Nov. 2018.
+
 Free Photo Face Woman Face Female Portrait woman. . Max Pixel. www.maxpixel.net/Face-Woman-Face-Female-Portrait-Woman-2159177. Accessed 25 Nov. 2018.
+
 Woman Face. . Pixabay. www.pexels.com/photo/woman-face-157661/. Accessed 25 Nov. 2018.
+
 Grayscale Photo of Woman in Black Scoop Neck Halter Dress. . Pixabay. www.pexels.com/photo/fashion-girl-women-model-60712/. Accessed 25 Nov. 2018.
+
 Punk, Pablo. Woman in Brown Collard Shirt. . Pexels. www.pexels.com/photo/black-and-white-girl-portrait-beauty-108447/. Accessed 25 Nov. 2018.
+
 Orbit Publishers. Woman Standing Near Orange Painted Wall. . Pexels. www.pexels.com/photo/woman-standing-near-orange-painted-wall-1152703/. Accessed 25 Nov. 2018.
 
 Fillieul, Thierry. Woman in Red Tank Top. . Pexels. www.pexels.com/photo/woman-in-red-tank-top-638700/. Accessed 25 Nov. 2018.
