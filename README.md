@@ -3,6 +3,8 @@
 Instead of tackling what is universal beauty, we propose to attempt to create profiles based on training data for individual understanding of beauty, while maintaining efficiency.
 This paper describes a fully-functional software system that creates an individual machine learning algorithm based off a profile to allow users to get an accurate assessment of what they would classify and score beauty. The system would take data and use facial landmarks in order to assess this. The system can be changed to allow automatic search of new images to proactively select the ones that have high scores for any individual user. The project uses an existing 68-point landmark detection algorithm proposed by Rainer Lienhard to identify the facial landmark points (a so called facial mask) from images that will be feed into various machine learning algorithms.
 
+# This an earlier version and has several dependencies that have security problems.
+This was meant as an academic demo, currently other items have been corrected in a later version that has addressed these items. With that said, the user takes their own risks on this.
 
 # Easiest Method (Recommended)
 A pre made VM for virtual box with all items ready to go!
